@@ -125,6 +125,48 @@ To increase confidence of the results obtained following measures were made to d
 Limitations of the study are as follows: First, based on the user base and design of the Joseon Space website, it is difficult to generalize and apply the results of the work in other related studies and on other platforms. Second, the use of IP-based geographic location, which can contain errors due to some users using VPN\footnote{VPN: Virtual Private Network, a service that masks a user's real IP address and encrypts their internet connection for privacy or security reasons.} or proxy\footnote{Proxy: An intermediary server that acts between a user and the internet, often used for anonymity, caching, or bypassing access restrictions.}. Third, while interaction from bots was extracted out, other legitimate interactions could have been excluded too due to users' IP ranges falling into IPs commonly associated with bot activity.
 
 Such limitations can be mitigated by carrying out the A/B testing not only on the Joseon Space website (a Korean heritage tourism web application) but also on diverse web applications spanning various categories and user demographics. In addition, enhancing logic to more accurately detect bots using a holistic evaluation that incorporates not only IP but also user agent\footnote{User Agent: A string of information that a web browser or application sends to servers, indicating the type of browser, operating system, and sometimes device details.}, behavioral patterns, and other metadata\footnote{Metadata: Additional data providing information about other data, such as timestamps, browser details, and usage patterns, which can help identify anomalies or bots.}, can improve the bot detection algorithms.
+
+
+
+\section{Results}
+\label{sec:results}
+
+The experiment analyzed data from 3,316 users per condition, measuring user engagement based on the number of fields completed.
+
+\begin{figure}[h]
+    \centering
+    \begin{minipage}{0.49\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{media/v1.png}
+        \caption{Control: Normal sign-up}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.49\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{media/v2.png}
+        \caption{Gamified sign-up}
+    \end{minipage}
+    \caption{Comparison of sign-up forms: control vs. gamified version}
+\end{figure}
+
+
+\subsection{Data Visualization}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=3.5in]{media/sign_up_comparison.png}
+\caption{Histogram comparing fields completed in normal and gamified sign-up processes.}
+\label{fig:sign_up_comparison}
+\end{figure}
+The histogram in Figure~\ref{fig:sign_up_comparison} compares the distribution of fields completed between the normal (black bars) and gamified (gray bars) sign-up processes. The normal sign-up process shows a higher drop-off rate with fewer fields completed, while the gamified process demonstrates increased user engagement, with a greater number of users completing more fields.
+
+\subsection{Discussion of Findings}
+The results suggest that incorporating game-inspired elements, such as progress bars positively influences user behavior. Users exposed to the gamified interface exhibited increased engagement, as evidenced by a higher number of completed fields and a lower abandonment rate.
+
+These findings support the hypothesis that gamification enhances user motivation by providing visual feedback and incentives. However, further research is required to assess long-term user retention and whether gamified sign-ups improve conversion rates beyond initial interactions.
+
+
+
+
 \begin{thebibliography}{00}
 
 \bibitem{chang2016} J.-W. Chang and H.-Y. Wei, ``Exploring engaging gamification mechanics in massive online open courses,'' \textit{J. Educ. Technol. Soc.}, vol. 19, no. 2, pp. 177–203, 2016. [Online]. Available: http://www.jstor.org/stable/jeductechsoci.19.2.177
